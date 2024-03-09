@@ -1,13 +1,20 @@
-import "./style.css";
+import React from "react";
 
-export function UserCard(props) {
+import {IUser} from "../../utilities";
+
+import "./styles.css";
+
+interface IUserCardProps extends IUser {
+}
+
+export const UserCard: React.FC<IUserCardProps> = React.memo(({image, firstName, lastName, address}) => {
   return (
     <div className="userCard">
-      <img className="userPic" src={props.image} />
+      <img className="userPic" src={image} alt={'user Picture'}/>
       <div className="userInfo">
-        <div>{`${props.firstName} ${props.lastName}`}</div>
-        <div>{props.address.city}</div>
+        <div>{`${firstName} ${lastName}`}</div>
+        <div>{address.city}</div>
       </div>
     </div>
   );
-}
+})
