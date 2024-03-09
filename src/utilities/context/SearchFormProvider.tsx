@@ -21,8 +21,8 @@ export const SearchFormProvider: React.FC<React.PropsWithChildren> = ({children}
   }, [value])
 
   return (
-      <SearchFormContext.Provider value={searchFormValue}>
-        {children}
-      </SearchFormContext.Provider>
+    <SearchFormContext.Provider value={searchFormValue}>
+      {children}
+    </SearchFormContext.Provider>
   )
 }

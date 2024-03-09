@@ -2,9 +2,9 @@ import React from "react";
 
 import {Loader} from "../Loader/Loader.tsx";
 import {UserCard} from "../UserCard/UserCard";
+import {IUsers, useDebounce, useFetch, useSearchFormContext} from "../../utilities";
 
 import "./styles.css";
-import {IUsers, useDebounce, useFetch, useSearchFormContext} from "../../utilities";
 
 const API_URL = "https://dummyjson.com/users";
 
