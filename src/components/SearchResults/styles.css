@@ -4,3 +4,9 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.usersError {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
